@@ -4,18 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ee23b0-02e2-48f0-af3f-97ef403606be" name="Changes" comment="" />
+    <list default="true" id="1b30ec20-de37-4a02-8641-61e8fda8f4a1" name="Changes" comment="feat: 초기 프로젝트 세팅 및 User API 구현">
+      <change afterPath="$PROJECT_DIR$/java-basics-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/dto/UserCreateRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/dto/UserResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/repository/MemoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/service/UserService.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,7 +37,8 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="37TPH8dfIdRkcDgaSc3xszF0uat" />
+  <component name="ProjectId" id="386oqMoJ8aYO8O8Sccdzs88xFWV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,13 +46,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="JavaBasicsApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.javabasicsapi.JavaBasicsApiApplication" />
-      <module name="java-practice" />
+      <module name="java-basics-api" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.javabasicsapi.*" />
@@ -64,12 +73,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="37ee23b0-02e2-48f0-af3f-97ef403606be" name="Changes" comment="" />
-      <created>1766923997255</created>
+      <changelist id="1b30ec20-de37-4a02-8641-61e8fda8f4a1" name="Changes" comment="feat: 초기 프로젝트 세팅 및 User API 구현" />
+      <created>1768129572496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1766923997255</updated>
+      <updated>1768129572496</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 초기 프로젝트 세팅 및 User API 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 초기 프로젝트 세팅 및 User API 구현" />
   </component>
 </project>
