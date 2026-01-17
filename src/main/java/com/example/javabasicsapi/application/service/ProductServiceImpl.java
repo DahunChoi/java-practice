@@ -35,7 +35,11 @@ public class ProductServiceImpl extends AbstractCrudService implements ProductSe
     }
 
     @Override
-    @Cacheable(value = CacheConfig.PRODUCTS_CACHE, key = "#id")
+    @Cacheable(
+            value = CacheConfig.PRODUCTS_CACHE,
+            key = "#id",
+            unless = "#result == null"
+    )
     public ProductResponse getById(Long id) {
         log.info("[DB HIT] getById called. id={}", id);
 
