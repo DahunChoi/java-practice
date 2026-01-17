@@ -12,6 +12,7 @@ target/
 *.ipr
 *.iws
 out/
+.idea/workspace.xml
 
 ### VS Code ###
 .vscode/

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b30ec20-de37-4a02-8641-61e8fda8f4a1" name="Changes" comment="chore: Maven Lombok 어노테이션 프로세서 설정 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javabasicsapi/presentation/ProductController.java" afterDir="false" />
+    <list default="true" id="1b30ec20-de37-4a02-8641-61e8fda8f4a1" name="Changes" comment="Feat: ProductController.java 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javabasicsapi/domain/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javabasicsapi/domain/model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1768662051904</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix: id에 대해 final 제거">
+      <created>1768662169503</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1768662169503</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Feat: ProductController.java 추가">
+      <created>1768662197391</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1768662197391</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +144,8 @@
     <MESSAGE value="Feat: ProductRepository.java, InMemoryProductRepository.java 추가" />
     <MESSAGE value="Feat: application 계층 내 dto 및 service 추가" />
     <MESSAGE value="chore: Maven Lombok 어노테이션 프로세서 설정 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: Maven Lombok 어노테이션 프로세서 설정 추가" />
+    <MESSAGE value="Fix: id에 대해 final 제거" />
+    <MESSAGE value="Feat: ProductController.java 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: ProductController.java 추가" />
   </component>
 </project>
