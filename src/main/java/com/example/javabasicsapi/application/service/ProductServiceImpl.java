@@ -8,6 +8,7 @@ import com.example.javabasicsapi.domain.model.Product;
 import com.example.javabasicsapi.domain.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -66,7 +67,7 @@ public class ProductServiceImpl extends AbstractCrudService implements ProductSe
     }
 
     @Override
-    @Cacheable(value = CacheConfig.PRODUCTS_CACHE, key = "#id")
+    @CacheEvict(value = CacheConfig.PRODUCTS_CACHE, key = "#id")
     public void delete(Long id) {
         require(productRepository.existsById(id),
                 "Product not found. id=" + id);
