@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b30ec20-de37-4a02-8641-61e8fda8f4a1" name="Changes" comment="Feat: application 계층 내 dto 및 service 추가">
+    <list default="true" id="1b30ec20-de37-4a02-8641-61e8fda8f4a1" name="Changes" comment="chore: Maven Lombok 어노테이션 프로세서 설정 추가">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javabasicsapi/presentation/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basics-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basics-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javabasicsapi/domain/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javabasicsapi/domain/model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1768660331927</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="chore: Maven Lombok 어노테이션 프로세서 설정 추가">
+      <created>1768662051904</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768662051904</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -126,6 +128,7 @@
     <MESSAGE value="Feat: Product.java 추가" />
     <MESSAGE value="Feat: ProductRepository.java, InMemoryProductRepository.java 추가" />
     <MESSAGE value="Feat: application 계층 내 dto 및 service 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: application 계층 내 dto 및 service 추가" />
+    <MESSAGE value="chore: Maven Lombok 어노테이션 프로세서 설정 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: Maven Lombok 어노테이션 프로세서 설정 추가" />
   </component>
 </project>

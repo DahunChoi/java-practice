@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 @Builder
 @AllArgsConstructor
 public class Product {
+
     private final Long id;
 
     @Setter
