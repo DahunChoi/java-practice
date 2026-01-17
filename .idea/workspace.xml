@@ -4,25 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b30ec20-de37-4a02-8641-61e8fda8f4a1" name="Changes" comment="feat: 초기 프로젝트 세팅 및 User API 구현">
-      <change afterPath="$PROJECT_DIR$/java-basics-api.iml" afterDir="false" />
+    <list default="true" id="1b30ec20-de37-4a02-8641-61e8fda8f4a1" name="Changes" comment="Feat: application 계층 내 dto 및 service 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javabasicsapi/presentation/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_42.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/dto/UserCreateRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/dto/UserResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/repository/MemoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/javabasicsapi/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-basics-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basics-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javabasicsapi/domain/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javabasicsapi/domain/model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Record" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,13 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="JavaBasicsApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.javabasicsapi.JavaBasicsApiApplication" />
@@ -79,10 +82,50 @@
       <option name="presentableId" value="Default" />
       <updated>1768129572496</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: 초기 프로젝트 세팅 및 User API 구현">
+      <created>1768652432262</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768652432262</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Feat: CacheConfig 추가">
+      <created>1768656084452</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768656084452</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Feat: Product.java 추가">
+      <created>1768656415963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768656415963</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Feat: ProductRepository.java, InMemoryProductRepository.java 추가">
+      <created>1768657628538</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768657628538</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Feat: application 계층 내 dto 및 service 추가">
+      <created>1768660331927</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1768660331927</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 초기 프로젝트 세팅 및 User API 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 초기 프로젝트 세팅 및 User API 구현" />
+    <MESSAGE value="Feat: CacheConfig 추가" />
+    <MESSAGE value="Feat: Product.java 추가" />
+    <MESSAGE value="Feat: ProductRepository.java, InMemoryProductRepository.java 추가" />
+    <MESSAGE value="Feat: application 계층 내 dto 및 service 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: application 계층 내 dto 및 service 추가" />
   </component>
 </project>

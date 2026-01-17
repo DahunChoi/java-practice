@@ -48,7 +48,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:6.2.15" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:6.2.15" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.2.15" level="project" />
-    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.42" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.34" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:3.5.9" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:3.5.9" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:3.5.9" level="project" />
