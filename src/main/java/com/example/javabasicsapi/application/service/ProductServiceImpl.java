@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,6 +25,7 @@ public class ProductServiceImpl extends AbstractCrudService implements ProductSe
     private final ProductRepository productRepository;
 
     @Override
+    @CacheEvict(value = CacheConfig.PRODUCT_LIST_CACHE, allEntries = true)
     public ProductResponse create(ProductCreateRequest req) {
         Product saved = productRepository.save(Product.builder()
                 .id(null)
@@ -51,7 +53,13 @@ public class ProductServiceImpl extends AbstractCrudService implements ProductSe
     }
 
     @Override
+    @Cacheable(
+            value = CacheConfig.PRODUCT_LIST_CACHE,
+            key = "'all'",
+            unless = "#result == null || #result.isEmpty()"
+    )
     public List<ProductResponse> getAll() {
+        log.info("[DB HIT] getAll called");
         return productRepository.findAll().stream()
                 .map(ProductResponse::from)
                 .toList();
@@ -59,6 +67,7 @@ public class ProductServiceImpl extends AbstractCrudService implements ProductSe
 
     @Override
     @CachePut(value = CacheConfig.PRODUCTS_CACHE, key = "#id")
+    @CacheEvict(value = CacheConfig.PRODUCT_LIST_CACHE, allEntries = true)
     public ProductResponse update(Long id, ProductUpdateRequest req) {
         Product p = productRepository.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException(id));
@@ -72,7 +81,10 @@ public class ProductServiceImpl extends AbstractCrudService implements ProductSe
     }
 
     @Override
-    @CacheEvict(value = CacheConfig.PRODUCTS_CACHE, key = "#id")
+    @Caching(evict = {
+        @CacheEvict(value = CacheConfig.PRODUCTS_CACHE, key = "#id"),
+        @CacheEvict(value = CacheConfig.PRODUCT_LIST_CACHE, allEntries = true)
+    })
     public void delete(Long id) {
         if (!productRepository.existsById(id)) {
             throw new ProductNotFoundException(id);
