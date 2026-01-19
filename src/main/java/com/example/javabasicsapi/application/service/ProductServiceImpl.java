@@ -3,6 +3,7 @@ package com.example.javabasicsapi.application.service;
 import com.example.javabasicsapi.application.dto.ProductCreateRequest;
 import com.example.javabasicsapi.application.dto.ProductResponse;
 import com.example.javabasicsapi.application.dto.ProductUpdateRequest;
+import com.example.javabasicsapi.common.exception.ProductNotFoundException;
 import com.example.javabasicsapi.config.CacheConfig;
 import com.example.javabasicsapi.domain.model.Product;
 import com.example.javabasicsapi.domain.repository.ProductRepository;
@@ -44,7 +45,7 @@ public class ProductServiceImpl extends AbstractCrudService implements ProductSe
         log.info("[DB HIT] getById called. id={}", id);
 
         Product p = productRepository.findById(id)
-                .orElseThrow(() -> notFound("Product not found. id=" + id));
+                .orElseThrow(() -> new ProductNotFoundException(id));
 
         return ProductResponse.from(p);
     }
@@ -60,7 +61,7 @@ public class ProductServiceImpl extends AbstractCrudService implements ProductSe
     @CachePut(value = CacheConfig.PRODUCTS_CACHE, key = "#id")
     public ProductResponse update(Long id, ProductUpdateRequest req) {
         Product p = productRepository.findById(id)
-                .orElseThrow(() -> notFound("Product not found. id=" + id));
+                .orElseThrow(() -> new ProductNotFoundException(id));
 
         p.setName(req.name());
         p.setPrice(req.price());
@@ -73,8 +74,9 @@ public class ProductServiceImpl extends AbstractCrudService implements ProductSe
     @Override
     @CacheEvict(value = CacheConfig.PRODUCTS_CACHE, key = "#id")
     public void delete(Long id) {
-        require(productRepository.existsById(id),
-                "Product not found. id=" + id);
+        if (!productRepository.existsById(id)) {
+            throw new ProductNotFoundException(id);
+        }
 
         productRepository.deleteById(id);
     }
